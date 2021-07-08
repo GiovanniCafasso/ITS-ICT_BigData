@@ -11,6 +11,7 @@ Here's a list about the example included:
 - FlatMap + CountByValue (example name: WordCount, fully qualified main class: it.sunnyvale.academy.sparkrddsbasics.WordCount)
 - Distinct + Collect  (example name: DistinctExample, fully qualified main class: it.sunnyvale.academy.sparkrddsbasics.transformation.DistinctExample)
 - Join (example name: JoinExample, fully qualified main class: it.sunnyvale.academy.sparkrddsbasics.transformation.JoinExample)
+- Reduce (example name: ReduceExample, fully qualified main class: it.sunnyvale.academy.sparkrddsbasics.transformation.ReduceExample)
 
 
 ## Prerequisites
