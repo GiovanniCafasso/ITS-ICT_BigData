@@ -19,7 +19,10 @@ public class Main {
         JavaSparkContext sc = new JavaSparkContext(conf);
 
         // Load dataset
-        JavaRDD<String> lines = sc.textFile("ass6_input/spacex_launches.csv");
+        if(args.length > 0)   //verifica se si trova su cloud o in locale
+            avaRDD<String> lines = args[0]; //cloud
+        else
+            JavaRDD<String> lines = sc.textFile("ass6_input/spacex_launches.csv");  //locale
 
         long count = lines
                 // Skip CSV header
@@ -29,7 +32,7 @@ public class Main {
                 // Filter successful launches
                 .filter(line -> line.equals("true"))
                 // Count result
-                .count();
+                .count();   //Action, mentre tutte le altre sono Transformation
 
         /*
 
