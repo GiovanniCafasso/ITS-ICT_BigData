@@ -20,7 +20,7 @@ public class Main {
 
         // Load dataset
         if(args.length > 0)   //verifica se si trova su cloud o in locale
-            avaRDD<String> lines = args[0]; //cloud
+            JavaRDD<String> lines = args[0]; //cloud
         else
             JavaRDD<String> lines = sc.textFile("ass6_input/spacex_launches.csv");  //locale
 
