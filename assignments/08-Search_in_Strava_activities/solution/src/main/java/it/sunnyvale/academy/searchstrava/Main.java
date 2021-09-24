@@ -33,7 +33,7 @@ public class Main {
 
         Dataset<Row> df = spark
                 .read()
-                .option("multiline", "true")
+                .option("multiline", "true")    //multiline=true
                 .option("inferSchema", "false")
                 .option("nullValue", "null")
                 .option("treatEmptyValuesAsNulls", "true")
